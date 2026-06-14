@@ -1,0 +1,42 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-hooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test session-start hook
+        run: bash hooks/session-start-test.sh
+
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all skill files have frontmatter
+        run: |
+          ERRORS=0
+          for skill in skills/*/SKILL.md; do
+            if ! head -1 "$skill" | grep -q "^---$"; then
+              echo "ERROR: Missing frontmatter in $skill"
+              ERRORS=$((ERRORS+1))
+            fi
+            if ! grep -q "^name:" "$skill"; then
+              echo "ERROR: Missing 'name' field in $skill"
+              ERRORS=$((ERRORS+1))
+            fi
+            if ! grep -q "^## Verification Requirements" "$skill"; then
+              echo "ERROR: Missing 'Verification Requirements' section in $skill"
+              ERRORS=$((ERRORS+1))
+            fi
+          done
+          if [ $ERRORS -gt 0 ]; then
+            echo "$ERRORS validation errors found"
+            exit 1
+          fi
+          echo "All skills valid"

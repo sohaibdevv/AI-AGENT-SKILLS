@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "bash .agent-skills/hooks/session-start.sh"
+      }
+    ]
+  }
+}
