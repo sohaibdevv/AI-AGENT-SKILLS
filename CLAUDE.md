@@ -1,4 +1,4 @@
-# AI Agent Skills — Claude Instructions
+# AI Agent Skills - Claude Instructions
 
 You are contributing to the AI Agent Skills repository. This repo contains skill modules for AI coding agents.
 
@@ -18,7 +18,7 @@ A collection of structured workflow files (skills) that AI coding agents load to
 
 ### What to avoid:
 - Vague guidance ("make sure it's secure")
-- Duplication — reference other skills instead
+- Duplication - reference other skills instead
 - Aspirational content that agents can't execute
 - Updating multiple skills when one would do
 
@@ -28,6 +28,6 @@ bash hooks/session-start-test.sh
 ```
 
 ## Key files
-- `AGENTS.md` — Core execution model all agents must read
-- `skills/using-agent-skills/SKILL.md` — Meta-skill for skill discovery
-- `docs/skill-anatomy.md` — How to write a skill
+- `AGENTS.md` - Core execution model all agents must read
+- `skills/using-agent-skills/SKILL.md` - Meta-skill for skill discovery
+- `docs/skill-anatomy.md` - How to write a skill

@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Most ideas arrive as fuzzy intuitions. This skill converts them into crisp, buildable proposals with clear scope, constraints, and success criteria — before anyone writes a spec or a line of code.
+Most ideas arrive as fuzzy intuitions. This skill converts them into crisp, buildable proposals with clear scope, constraints, and success criteria - before anyone writes a spec or a line of code.
 
 ## When to Use
 
@@ -19,7 +19,7 @@ Most ideas arrive as fuzzy intuitions. This skill converts them into crisp, buil
 ## Process
 
 ### Step 1: State the problem, not the solution
-Write one sentence describing the problem being solved. Not the feature — the problem. Example: "Users can't find past orders because search only covers the last 30 days."
+Write one sentence describing the problem being solved. Not the feature - the problem. Example: "Users can't find past orders because search only covers the last 30 days."
 
 ### Step 2: Identify who has the problem
 Name the specific user persona or system component affected. Vague problems have vague solutions.
@@ -37,11 +37,11 @@ For each solution: estimate effort (S/M/L), impact (low/medium/high), and risk (
 Explicitly state what this proposal does NOT include. Scope creep starts here if you don't.
 
 ### Step 7: State the success metric
-One measurable outcome that proves the problem is solved. Not "users like it" — "search result relevance score improves by 15% on the benchmark dataset."
+One measurable outcome that proves the problem is solved. Not "users like it" - "search result relevance score improves by 15% on the benchmark dataset."
 
 ## Anti-Rationalizations
 
-**"We know what we want to build — let's just build it"**
+**"We know what we want to build - let's just build it"**
 The thing you want to build is a solution. Before committing to a solution, confirm you've correctly understood the problem.
 
 **"We don't have data on this yet"**

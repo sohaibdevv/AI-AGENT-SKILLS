@@ -55,10 +55,10 @@ Record: what was slow, why, what was done, and the measured improvement. Future 
 
 ## Anti-Rationalizations
 
-**"I know this is slow — I don't need to profile"**
+**"I know this is slow - I don't need to profile"**
 Everyone thinks they know where the bottleneck is. Profilers are always more accurate than intuition.
 
-**"This optimization is obvious — I don't need a benchmark"**
+**"This optimization is obvious - I don't need a benchmark"**
 Without a benchmark, "obvious improvement" is also "unmeasured claim."
 
 ## Verification Requirements

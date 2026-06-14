@@ -1,6 +1,6 @@
 ---
 name: security-auditor
-role: Security Engineer — Security Review
+role: Security Engineer - Security Review
 ---
 
 ## Role

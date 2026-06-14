@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Architecture design is the discipline of making the decisions that are hard to reverse later. Good architecture is not the most elegant — it is the simplest design that satisfies constraints today and can be evolved tomorrow. Every architecture decision has costs; this skill makes them explicit.
+Architecture design is the discipline of making the decisions that are hard to reverse later. Good architecture is not the most elegant - it is the simplest design that satisfies constraints today and can be evolved tomorrow. Every architecture decision has costs; this skill makes them explicit.
 
 ## When to Use
 
@@ -22,7 +22,7 @@ Architecture design is the discipline of making the decisions that are hard to r
 List: scale targets, latency requirements, consistency requirements, team size, deployment environment, budget, regulatory constraints. Architecture that ignores constraints is fiction.
 
 ### Step 2: Identify the quality attributes
-Rank the system's quality attributes in priority order: availability, consistency, latency, throughput, security, maintainability, cost. You cannot optimize all of them — make the trade-offs explicit.
+Rank the system's quality attributes in priority order: availability, consistency, latency, throughput, security, maintainability, cost. You cannot optimize all of them - make the trade-offs explicit.
 
 ### Step 3: Define the component boundaries
 Identify the major components and their responsibilities. Apply the Single Responsibility Principle at the system level: each component should own one thing well.

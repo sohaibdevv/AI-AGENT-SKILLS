@@ -24,10 +24,10 @@ Incidents are inevitable. How you respond determines whether they are learning o
 Acknowledge in your alerting system within 5 minutes. This signals you're on it and stops duplicate escalations.
 
 **Step 2: Assess severity**
-- **P0** — Complete service outage, data loss, security breach. Page everyone.
-- **P1** — Significant degradation affecting many users. Page the team.
-- **P2** — Partial degradation, workaround exists. Handle during business hours.
-- **P3** — Minor issue, users unaffected or workaround obvious. Normal ticket.
+- **P0** - Complete service outage, data loss, security breach. Page everyone.
+- **P1** - Significant degradation affecting many users. Page the team.
+- **P2** - Partial degradation, workaround exists. Handle during business hours.
+- **P3** - Minor issue, users unaffected or workaround obvious. Normal ticket.
 
 **Step 3: Declare the incident and open a channel**
 For P0/P1: open an incident channel (#incident-YYYY-MM-DD-brief-description). All communication goes there. Appoint an Incident Commander (IC).
@@ -90,7 +90,7 @@ Focus on systems and processes, not individuals. "The deployment pipeline allowe
 **"We'll communicate once we have a fix"**
 Users need to know you know. An hour of silence is worse than an honest "we're investigating."
 
-**"We know the root cause — no need for a post-mortem"**
+**"We know the root cause - no need for a post-mortem"**
 Post-mortems are not just for finding root causes. They identify contributing factors, test your detection and response, and create shared understanding. Skip them and the same incident recurs.
 
 ## Verification Requirements

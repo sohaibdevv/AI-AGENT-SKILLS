@@ -29,16 +29,16 @@ Start with a normalized design. Denormalize only when profiling shows it's neces
 - Never expose integer sequence IDs to users (enumeration attack)
 - Ensure IDs are indexed
 
-### Step 4: Migrations — backward compatible first
+### Step 4: Migrations - backward compatible first
 Every migration must be backward compatible with the current code:
 1. Deploy migration (add new column, add new table)
 2. Deploy code that uses the new column
-3. Deploy cleanup migration (drop old column) — only after old code is gone
+3. Deploy cleanup migration (drop old column) - only after old code is gone
 
 Never drop a column in the same deploy that stops using it.
 
 ### Step 5: Index strategy
-Index columns that appear in WHERE clauses, JOIN conditions, and ORDER BY of hot queries. Don't over-index — each index slows writes.
+Index columns that appear in WHERE clauses, JOIN conditions, and ORDER BY of hot queries. Don't over-index - each index slows writes.
 
 Run `EXPLAIN` on every hot query before deploying.
 

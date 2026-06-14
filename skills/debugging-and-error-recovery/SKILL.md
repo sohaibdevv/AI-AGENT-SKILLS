@@ -1,13 +1,13 @@
 ---
 name: debugging-and-error-recovery
-description: Systematic root-cause analysis — stop guessing, start isolating
+description: Systematic root-cause analysis - stop guessing, start isolating
 difficulty: junior
 domains: [general]
 ---
 
 ## Overview
 
-Debugging is a skill, not luck. Effective debugging is systematic: form a hypothesis, design a minimal test, validate or falsify, repeat. Random changes are not debugging — they are gambling.
+Debugging is a skill, not luck. Effective debugging is systematic: form a hypothesis, design a minimal test, validate or falsify, repeat. Random changes are not debugging - they are gambling.
 
 ## When to Use
 
@@ -46,7 +46,7 @@ Write a test that would have caught this bug. Add it to the test suite.
 **"I'll try changing this and see if it works"**
 This is not debugging. Form a hypothesis first.
 
-**"The bug is intermittent — I can't reproduce it"**
+**"The bug is intermittent - I can't reproduce it"**
 Intermittent bugs have causes. Add logging and wait for the next occurrence. Or: analyze the conditions under which it occurred and stress test those conditions.
 
 ## Verification Requirements

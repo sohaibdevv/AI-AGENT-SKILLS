@@ -53,10 +53,10 @@ Prompts in production must have regression tests that run in CI. A prompt change
 
 ## Anti-Rationalizations
 
-**"Prompt engineering is just natural language — I don't need to test it"**
+**"Prompt engineering is just natural language - I don't need to test it"**
 Natural language is the interface. The behavior is a system. All systems need tests.
 
-**"LLM outputs are non-deterministic — tests don't work"**
+**"LLM outputs are non-deterministic - tests don't work"**
 Deterministic evaluation of non-deterministic outputs: use temperature=0 for tests, use majority-vote scoring, use LLM-as-judge with a stable judge model. Non-determinism is not an excuse.
 
 **"We'll monitor it in production"**

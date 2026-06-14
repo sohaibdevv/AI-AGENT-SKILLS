@@ -20,14 +20,14 @@ LLM evaluation is the discipline of measuring what your model or system actually
 
 ### Step 1: Define the evaluation dimensions
 Common dimensions (pick those relevant to your task):
-- **Correctness** — Is the answer factually right?
-- **Relevance** — Does the answer address the question?
-- **Groundedness** — Is the answer supported by the provided context?
-- **Safety** — Does the output avoid harmful content?
-- **Format** — Does the output match the required schema/format?
-- **Tone/Style** — Does the output match the required voice?
-- **Latency** — Is the response fast enough?
-- **Cost** — Is the per-request cost within budget?
+- **Correctness** - Is the answer factually right?
+- **Relevance** - Does the answer address the question?
+- **Groundedness** - Is the answer supported by the provided context?
+- **Safety** - Does the output avoid harmful content?
+- **Format** - Does the output match the required schema/format?
+- **Tone/Style** - Does the output match the required voice?
+- **Latency** - Is the response fast enough?
+- **Cost** - Is the per-request cost within budget?
 
 ### Step 2: Build the evaluation dataset
 A good eval dataset:
@@ -38,10 +38,10 @@ A good eval dataset:
 - Is versioned and never modified (only appended to)
 
 ### Step 3: Choose evaluation methods
-- **Automated exact match** — for structured outputs with known correct answers
-- **Automated metric** — BLEU/ROUGE for text overlap, custom scoring functions
-- **LLM-as-judge** — use a strong model (GPT-4, Claude Opus) to score outputs on rubrics; calibrate against human judgments
-- **Human evaluation** — ground truth; use for calibrating automated evals
+- **Automated exact match** - for structured outputs with known correct answers
+- **Automated metric** - BLEU/ROUGE for text overlap, custom scoring functions
+- **LLM-as-judge** - use a strong model (GPT-4, Claude Opus) to score outputs on rubrics; calibrate against human judgments
+- **Human evaluation** - ground truth; use for calibrating automated evals
 
 ### Step 4: Implement automated evals in CI
 Every change to a prompt, model version, or system prompt must trigger the eval suite in CI. Define a threshold: "if correctness drops below 85% or safety failures increase, block the PR."
@@ -51,11 +51,11 @@ Store eval results with: timestamp, model version, prompt version, per-example s
 
 ### Step 6: Adversarial evaluation
 Test for:
-- **Prompt injection** — Can user input override your system prompt?
-- **Jailbreaks** — Can a user extract harmful content?
-- **Hallucination** — Does the model fabricate facts confidently?
-- **Refusal rate** — Is the model refusing legitimate requests? (Over-refusal is also a failure)
-- **Demographic bias** — Does quality vary by user demographic mentioned in input?
+- **Prompt injection** - Can user input override your system prompt?
+- **Jailbreaks** - Can a user extract harmful content?
+- **Hallucination** - Does the model fabricate facts confidently?
+- **Refusal rate** - Is the model refusing legitimate requests? (Over-refusal is also a failure)
+- **Demographic bias** - Does quality vary by user demographic mentioned in input?
 
 ### Step 7: Human preference evaluation (for generation tasks)
 For open-ended generation: run A/B comparisons. Which version do humans prefer? Aggregate preference scores over 100+ pairs. Automated metrics alone are insufficient for generation quality.
@@ -71,7 +71,7 @@ For open-ended generation: run A/B comparisons. Which version do humans prefer? 
 **"The model feels better in my testing"**
 "Feels better" is not an evaluation. Run the eval suite and compare scores.
 
-**"Evals are expensive — we'll skip them for this release"**
+**"Evals are expensive - we'll skip them for this release"**
 Skipping evals means the next incident will show you what your eval set should have covered.
 
 **"LLM-as-judge is biased"**

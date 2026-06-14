@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Security is not a feature you add — it is a property you maintain. Most security failures are not sophisticated attacks; they are missing input validation, exposed secrets, misconfigured permissions, and unpatched dependencies. This skill systematically eliminates these before they reach production.
+Security is not a feature you add - it is a property you maintain. Most security failures are not sophisticated attacks; they are missing input validation, exposed secrets, misconfigured permissions, and unpatched dependencies. This skill systematically eliminates these before they reach production.
 
 ## When to Use
 
@@ -20,17 +20,17 @@ Security is not a feature you add — it is a property you maintain. Most securi
 
 ### Step 1: Threat model the change
 Ask: what can an attacker do with this change? What data does it touch? What systems does it connect to? Who has access? Threat model in 10 minutes with STRIDE:
-- **S**poofing — Can someone impersonate a legitimate user?
-- **T**ampering — Can someone modify data they shouldn't?
-- **R**epudiation — Can someone deny they took an action?
-- **I**nformation Disclosure — Can someone read data they shouldn't?
-- **D**enial of Service — Can someone block legitimate access?
-- **E**levation of Privilege — Can someone gain permissions they shouldn't have?
+- **S**poofing - Can someone impersonate a legitimate user?
+- **T**ampering - Can someone modify data they shouldn't?
+- **R**epudiation - Can someone deny they took an action?
+- **I**nformation Disclosure - Can someone read data they shouldn't?
+- **D**enial of Service - Can someone block legitimate access?
+- **E**levation of Privilege - Can someone gain permissions they shouldn't have?
 
 ### Step 2: Input validation
 - Validate all inputs at the boundary (before processing or storage)
 - Validate type, length, format, and range
-- Reject invalid inputs — don't sanitize and continue
+- Reject invalid inputs - don't sanitize and continue
 - Parameterize all database queries (no string concatenation)
 - Encode all outputs for their context (HTML, SQL, shell, JSON)
 
@@ -45,7 +45,7 @@ Ask: what can an attacker do with this change? What data does it touch? What sys
 - No secrets in code, commits, or logs
 - Use environment variables or a secrets manager
 - Rotate secrets after any exposure (assume exposure if committed to git)
-- Verify: `git log --all -p | grep -i "password\|secret\|token\|key"` — if anything shows, rotate immediately
+- Verify: `git log --all -p | grep -i "password\|secret\|token\|key"` - if anything shows, rotate immediately
 
 ### Step 5: Dependency audit
 - Run `npm audit`, `pip-audit`, or equivalent
@@ -72,7 +72,7 @@ Ask: what can an attacker do with this change? What data does it touch? What sys
 
 ## Anti-Rationalizations
 
-**"This is an internal API — we don't need auth"**
+**"This is an internal API - we don't need auth"**
 Internal APIs are reached by internal attackers and misconfigured external clients. Every API needs auth.
 
 **"We'll add security hardening after launch"**

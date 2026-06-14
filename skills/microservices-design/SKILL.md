@@ -18,7 +18,7 @@ Microservices solve a people problem (independent team deployments) while creati
 ## Process
 
 ### Step 1: Justify the split
-A service split is justified when: teams are blocked on each other's deployments, scaling requirements differ dramatically, or technology requirements differ. Don't split for "separation of concerns" alone — a module achieves that at lower cost.
+A service split is justified when: teams are blocked on each other's deployments, scaling requirements differ dramatically, or technology requirements differ. Don't split for "separation of concerns" alone - a module achieves that at lower cost.
 
 ### Step 2: Define service boundaries by business capability
 Services should own a business capability end-to-end. Don't split by technical layer (don't make a "user data service" that stores data for 10 other services).

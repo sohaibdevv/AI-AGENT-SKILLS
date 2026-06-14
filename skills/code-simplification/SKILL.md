@@ -1,6 +1,6 @@
 ---
 name: code-simplification
-description: Remove accidental complexity without changing behavior — apply Chesterton's Fence
+description: Remove accidental complexity without changing behavior - apply Chesterton's Fence
 difficulty: senior
 domains: [general]
 ---
@@ -25,7 +25,7 @@ Before removing any code that seems unnecessary: understand why it was written. 
 - **Accidental complexity**: complexity from poor implementation choices
 - **Essential complexity**: complexity inherent to the problem domain
 
-Only remove accidental complexity. Essential complexity cannot be removed — only managed.
+Only remove accidental complexity. Essential complexity cannot be removed - only managed.
 
 ### Step 3: Look for these simplification opportunities
 

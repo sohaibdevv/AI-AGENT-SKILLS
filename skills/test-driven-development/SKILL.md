@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-TDD is not about testing — it's about design. Writing tests first forces you to define the interface before the implementation, catches over-engineering, and creates a living specification. The test suite is proof of correctness, not evidence of effort.
+TDD is not about testing - it's about design. Writing tests first forces you to define the interface before the implementation, catches over-engineering, and creates a living specification. The test suite is proof of correctness, not evidence of effort.
 
 ## When to Use
 
@@ -33,7 +33,7 @@ Add one behavior at a time. The test suite grows incrementally.
 After the happy path works: test empty inputs, boundary values, error conditions, concurrent access, and failure modes.
 
 ### Step 6: Test the contract, not the implementation
-Tests should describe what the function does, not how it does it. Avoid testing internal state — test inputs and outputs.
+Tests should describe what the function does, not how it does it. Avoid testing internal state - test inputs and outputs.
 
 ### Step 7: Keep tests fast and independent
 Each test must run in isolation. No shared mutable state between tests. Tests that require a specific order are fragile.
@@ -47,7 +47,7 @@ A test that is wrong is worse than no test. Delete tests that no longer represen
 Tests written after implementation test what the code does. Tests written before implementation test what the code should do. These are different.
 
 **"TDD is too slow"**
-TDD is slower in the first hour and faster in the second day. Debugging a test-free codebase is not faster — it's deferred pain.
+TDD is slower in the first hour and faster in the second day. Debugging a test-free codebase is not faster - it's deferred pain.
 
 **"This code is too simple to test"**
 Code simple enough to not test is simple enough to test in 2 minutes.

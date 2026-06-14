@@ -46,10 +46,10 @@ Have the spec reviewed by at least one stakeholder before starting implementatio
 
 ## Anti-Rationalizations
 
-**"This feature is obvious — I don't need to write it down"**
+**"This feature is obvious - I don't need to write it down"**
 If it's obvious, the spec takes 10 minutes. If it's not obvious, the spec saves days. Either way: write it.
 
-**"We'll iterate quickly — the spec will be wrong anyway"**
+**"We'll iterate quickly - the spec will be wrong anyway"**
 Iteration is not an excuse to skip specs. It means you write smaller, tighter specs for each iteration. Iterating on code without a spec means iterating in circles.
 
 **"The ticket has enough detail"**

@@ -7,7 +7,7 @@ domains: [data]
 
 ## Overview
 
-Data pipelines fail silently. Bad data flows downstream, corrupts reports, poisons ML training sets, and violates compliance requirements — often for days before anyone notices. This skill builds pipelines with the discipline to catch failures at the source.
+Data pipelines fail silently. Bad data flows downstream, corrupts reports, poisons ML training sets, and violates compliance requirements - often for days before anyone notices. This skill builds pipelines with the discipline to catch failures at the source.
 
 ## When to Use
 
@@ -70,7 +70,7 @@ For each pipeline: what does it do, what are its inputs, what are its outputs, w
 
 ## Anti-Rationalizations
 
-**"The source is reliable — we don't need contract validation"**
+**"The source is reliable - we don't need contract validation"**
 Every source eventually sends bad data. The question is whether you catch it.
 
 **"Data lineage is a nice-to-have"**

@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Documentation that is wrong is worse than no documentation — it confidently misleads. This skill writes documentation that is minimal, accurate, and maintained. It also captures architectural decisions (ADRs) so future engineers understand why the system is the way it is.
+Documentation that is wrong is worse than no documentation - it confidently misleads. This skill writes documentation that is minimal, accurate, and maintained. It also captures architectural decisions (ADRs) so future engineers understand why the system is the way it is.
 
 ## When to Use
 

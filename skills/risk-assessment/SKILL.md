@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Risk not identified is risk not managed. This skill makes technical and delivery risk explicit so it can be mitigated, accepted, or escalated — before it surprises you.
+Risk not identified is risk not managed. This skill makes technical and delivery risk explicit so it can be mitigated, accepted, or escalated - before it surprises you.
 
 ## When to Use
 

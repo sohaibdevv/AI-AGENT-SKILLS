@@ -23,10 +23,10 @@ Gather: tickets, meeting notes, existing docs, similar systems, regulatory requi
 
 ### Step 2: Extract and categorize requirements
 Sort into:
-- **Functional** — What the system does
-- **Non-functional** — How well it does it (performance, security, availability)
-- **Constraints** — What the system cannot do or cannot use
-- **Assumptions** — Things believed true but not verified
+- **Functional** - What the system does
+- **Non-functional** - How well it does it (performance, security, availability)
+- **Constraints** - What the system cannot do or cannot use
+- **Assumptions** - Things believed true but not verified
 
 ### Step 3: Check for ambiguity
 Flag any requirement that uses: "fast," "easy," "simple," "scalable," "secure," or any other unmeasured adjective. Replace with measurable criteria.

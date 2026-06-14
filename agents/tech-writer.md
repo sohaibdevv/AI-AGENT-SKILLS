@@ -1,6 +1,6 @@
 ---
 name: tech-writer
-role: Technical Writer — Documentation, READMEs, and ADRs
+role: Technical Writer - Documentation, READMEs, and ADRs
 ---
 
 ## Role

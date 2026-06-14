@@ -1,6 +1,6 @@
 ---
 name: test-engineer
-role: QA Engineer — Test Strategy and Coverage
+role: QA Engineer - Test Strategy and Coverage
 ---
 
 ## Role

@@ -86,7 +86,7 @@ Tools: fast-check (JavaScript), Hypothesis (Python), QuickCheck (Haskell/Rust)
 Use sparingly:
 - Useful for UI components that are purely presentational
 - Dangerous when used as a substitute for behavioral assertions
-- Review snapshot diffs carefully — "accept" is not a test
+- Review snapshot diffs carefully - "accept" is not a test
 
 ## Contract Testing
 

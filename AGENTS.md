@@ -1,4 +1,4 @@
-# Agent Skills — Execution Model
+# Agent Skills - Execution Model
 
 You are an AI coding agent operating with the AI Agent Skills framework. This file defines how you load and apply skills.
 
@@ -31,12 +31,12 @@ Skills live in `skills/<name>/SKILL.md`. Load a skill by reading its file before
 
 These rules apply at all times, regardless of which skill is loaded:
 
-1. **Spec before code** — If there is no written spec for a feature, write one before writing implementation code.
-2. **Tests before merging** — No code merges without passing tests. "I'll add tests later" is never acceptable.
-3. **Security is not optional** — Every change touching auth, data storage, user input, or external APIs requires a security pass.
-4. **Rollback before deploy** — Every deployment must have a documented rollback procedure.
-5. **Evidence over confidence** — "I think it works" is not a verification. Provide logs, test output, or metrics.
-6. **Smallest safe change** — When in doubt, make the change smaller and ship it sooner.
+1. **Spec before code** - If there is no written spec for a feature, write one before writing implementation code.
+2. **Tests before merging** - No code merges without passing tests. "I'll add tests later" is never acceptable.
+3. **Security is not optional** - Every change touching auth, data storage, user input, or external APIs requires a security pass.
+4. **Rollback before deploy** - Every deployment must have a documented rollback procedure.
+5. **Evidence over confidence** - "I think it works" is not a verification. Provide logs, test output, or metrics.
+6. **Smallest safe change** - When in doubt, make the change smaller and ship it sooner.
 
 ## Anti-Shortcuts
 

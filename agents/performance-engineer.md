@@ -1,6 +1,6 @@
 ---
 name: performance-engineer
-role: Performance Engineer — Profiling, Benchmarking, and Optimization
+role: Performance Engineer - Profiling, Benchmarking, and Optimization
 ---
 
 ## Role

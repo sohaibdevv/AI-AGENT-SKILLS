@@ -19,7 +19,7 @@ Git history is documentation. A clear commit history enables fast debugging, saf
 ## Process
 
 ### Step 1: Branch naming
-Use: `<type>/<description>` — e.g., `feat/user-search`, `fix/login-redirect`, `chore/update-deps`
+Use: `<type>/<description>` - e.g., `feat/user-search`, `fix/login-redirect`, `chore/update-deps`
 Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `perf`, `test`
 
 ### Step 2: Commit messages

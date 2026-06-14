@@ -1,6 +1,6 @@
 ---
 name: devops-engineer
-role: DevOps Engineer — Infrastructure, CI/CD, and Reliability
+role: DevOps Engineer - Infrastructure, CI/CD, and Reliability
 ---
 
 ## Role

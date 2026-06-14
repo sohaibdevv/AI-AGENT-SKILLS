@@ -35,14 +35,14 @@ echo "Read and follow: ~/agent-skills/AGENTS.md" >> ~/.claude/CLAUDE.md
 After installation, these commands are available:
 
 ```
-/spec    — Write a specification before writing code
-/plan    — Break work into tasks
-/build   — Implement incrementally
-/test    — Write or review tests
-/review  — Code review across 5 dimensions
-/simplify — Remove complexity
-/ship    — Prepare for deployment
-/incident — Incident response
+/spec    - Write a specification before writing code
+/plan    - Break work into tasks
+/build   - Implement incrementally
+/test    - Write or review tests
+/review  - Code review across 5 dimensions
+/simplify - Remove complexity
+/ship    - Prepare for deployment
+/incident - Incident response
 ```
 
 ## Using Hooks (Auto-load on session start)

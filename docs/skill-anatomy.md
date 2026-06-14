@@ -36,7 +36,7 @@ Concrete action. What to do, not what to think about.
 Common shortcuts agents attempt and why they're wrong.
 
 **"[Exact rationalization an agent would use]"**
-[Short, direct rebuttal — 1-3 sentences]
+[Short, direct rebuttal - 1-3 sentences]
 
 **"[Another rationalization]"**
 [Rebuttal]
@@ -82,16 +82,16 @@ If a skill is growing beyond 500 lines, extract supporting content to a separate
 
 ## Difficulty levels
 
-- **junior** — Any engineer can apply this without domain expertise
-- **senior** — Requires understanding of engineering trade-offs
-- **staff** — Requires system-level thinking and knowledge of failure modes at scale
+- **junior** - Any engineer can apply this without domain expertise
+- **senior** - Requires understanding of engineering trade-offs
+- **staff** - Requires system-level thinking and knowledge of failure modes at scale
 
 ## Domains
 
 Assign all that apply:
-- `general` — Applies to any software project
-- `web` — Web applications (browser-side)
-- `mobile` — iOS/Android
-- `data` — Data pipelines, ETL, analytics
-- `ai-ml` — Machine learning, LLMs, AI systems
-- `infrastructure` — Cloud infrastructure, IaC, operations
+- `general` - Applies to any software project
+- `web` - Web applications (browser-side)
+- `mobile` - iOS/Android
+- `data` - Data pipelines, ETL, analytics
+- `ai-ml` - Machine learning, LLMs, AI systems
+- `infrastructure` - Cloud infrastructure, IaC, operations

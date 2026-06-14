@@ -30,13 +30,13 @@ Tools are the agent's API to the world. Each tool must have:
 - Error behavior documented
 
 ### Step 3: Implement tool observability
-Every tool call must be logged: which tool, what inputs, what outputs, how long it took, did it succeed. This is non-negotiable — you cannot debug an agent you cannot observe.
+Every tool call must be logged: which tool, what inputs, what outputs, how long it took, did it succeed. This is non-negotiable - you cannot debug an agent you cannot observe.
 
 ### Step 4: Design for idempotency
 Tools that create or modify state must be idempotent where possible. If an agent retries a tool call (due to failure), the second call must not create duplicate state.
 
 ### Step 5: Plan the agent loop
-Define: what does the agent do on each step? How does it decide it's done? What is the maximum number of steps? (Always set a maximum — unbounded loops are production incidents.)
+Define: what does the agent do on each step? How does it decide it's done? What is the maximum number of steps? (Always set a maximum - unbounded loops are production incidents.)
 
 ### Step 6: Define the handoff protocol
 If multiple agents coordinate: define exactly what one agent passes to the next. Use structured data, not natural language, for inter-agent communication. Natural language is lossy.

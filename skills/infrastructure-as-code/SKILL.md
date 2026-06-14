@@ -42,7 +42,7 @@ High blast radius changes require explicit approval from a second engineer.
 - Test: can you destroy and recreate from scratch?
 
 ### Step 5: Drift detection
-Run drift detection on a schedule. If the actual state diverges from the IaC state, investigate and resolve — don't let drift accumulate.
+Run drift detection on a schedule. If the actual state diverges from the IaC state, investigate and resolve - don't let drift accumulate.
 
 ### Step 6: Secrets management
 - No secrets in IaC code or state files
@@ -60,7 +60,7 @@ Wait for validation at each stage before proceeding.
 
 ## Anti-Rationalizations
 
-**"It's a small change — I'll do it in the console"**
+**"It's a small change - I'll do it in the console"**
 Console changes become invisible drift. IaC is the only source of truth. No exceptions.
 
 **"We don't need to test infrastructure"**

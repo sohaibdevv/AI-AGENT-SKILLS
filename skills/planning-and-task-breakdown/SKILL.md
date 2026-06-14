@@ -32,7 +32,7 @@ No task should take more than 2 days. If it does, break it down further. If it g
 Each task must have a clear, observable "done" state: test passes, endpoint returns 200, UI renders without error, migration runs cleanly.
 
 ### Step 5: Identify dependencies
-Draw or list which tasks must complete before others can start. Minimize dependencies — they are schedule risk.
+Draw or list which tasks must complete before others can start. Minimize dependencies - they are schedule risk.
 
 ### Step 6: Identify the critical path
 The longest chain of dependent tasks sets the minimum delivery time. Optimize this chain first.
@@ -46,12 +46,12 @@ Put the riskiest tasks first. You want to discover impossible requirements on da
 ## Anti-Rationalizations
 
 **"These tasks are too small to track"**
-If it's too small to track, it's too small to lose track of — which means it will be forgotten. Track it.
+If it's too small to track, it's too small to lose track of - which means it will be forgotten. Track it.
 
 **"I'll figure out the subtasks as I go"**
 Figuring out subtasks during execution means context-switching between planning mode and execution mode. Do the planning upfront.
 
-**"The spec is clear enough — I don't need to break it down"**
+**"The spec is clear enough - I don't need to break it down"**
 A spec describes the destination. A task breakdown is the map. You need both.
 
 ## Red Flags

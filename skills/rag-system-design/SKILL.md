@@ -25,7 +25,7 @@ What questions will users ask? What documents will answer them? What does "good 
 - Chunking strategy: fixed-size vs semantic vs structural
 - Chunk size: smaller chunks = more precise retrieval; larger = more context per chunk
 - Overlap: prevent context from being cut at chunk boundaries
-- Metadata: document source, date, section header — critical for filtering and attribution
+- Metadata: document source, date, section header - critical for filtering and attribution
 
 ### Step 3: Choose and evaluate the embedding model
 Test at least 2 embedding models on your retrieval evaluation set. Measure: retrieval accuracy (does the correct chunk appear in top-k?), latency, cost. Don't default to the most popular model.
@@ -40,7 +40,7 @@ Test at least 2 embedding models on your retrieval evaluation set. Measure: retr
 Measure:
 - **Recall@k**: Does the correct document appear in the top k results?
 - **Precision@k**: Of the top k results, how many are relevant?
-- **MRR**: Mean Reciprocal Rank — how highly is the correct document ranked?
+- **MRR**: Mean Reciprocal Rank - how highly is the correct document ranked?
 
 Target: Recall@5 > 0.80 on your evaluation set before moving to generation.
 

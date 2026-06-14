@@ -6,11 +6,11 @@ Thank you for contributing. This guide explains how to add or improve skills.
 
 A skill must be:
 
-- **Specific** — Actionable steps an agent can execute, not vague principles
-- **Verifiable** — Clear exit criteria with measurable evidence
-- **Grounded** — Based on real engineering practice that has been proven in production
-- **Minimal** — No duplication. Reference other skills instead of copying content
-- **Anti-shortcut** — Include documented rebuttals to common rationalizations for skipping the process
+- **Specific** - Actionable steps an agent can execute, not vague principles
+- **Verifiable** - Clear exit criteria with measurable evidence
+- **Grounded** - Based on real engineering practice that has been proven in production
+- **Minimal** - No duplication. Reference other skills instead of copying content
+- **Anti-shortcut** - Include documented rebuttals to common rationalizations for skipping the process
 
 ## Skill anatomy
 

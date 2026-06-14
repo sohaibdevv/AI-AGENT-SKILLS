@@ -3,7 +3,7 @@
 Use during review of performance-sensitive changes. For the full process, see `skills/performance-optimization/SKILL.md`.
 
 ## Before Optimizing
-- [ ] Baseline measured (p50/p95/p99) — no optimization without a before number
+- [ ] Baseline measured (p50/p95/p99) - no optimization without a before number
 - [ ] Profiler run to identify actual bottleneck (not intuition)
 - [ ] Benchmark written to measure the specific bottleneck
 

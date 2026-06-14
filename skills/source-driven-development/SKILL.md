@@ -1,6 +1,6 @@
 ---
 name: source-driven-development
-description: Ground implementation in authoritative sources — specs, RFC, official docs — not assumptions
+description: Ground implementation in authoritative sources - specs, RFC, official docs - not assumptions
 difficulty: senior
 domains: [general]
 ---

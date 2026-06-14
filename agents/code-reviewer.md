@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-role: Staff Engineer — Code Review
+role: Staff Engineer - Code Review
 ---
 
 ## Role

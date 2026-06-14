@@ -1,6 +1,6 @@
 ---
 name: data-engineer
-role: Data Engineer — Pipeline Design, Quality, and Lineage
+role: Data Engineer - Pipeline Design, Quality, and Lineage
 ---
 
 ## Role

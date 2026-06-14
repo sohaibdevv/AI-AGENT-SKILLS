@@ -10,11 +10,11 @@ Load this pack when implementing a feature end-to-end: database → API → UI.
 
 ### Plan
 3. `skills/planning-and-task-breakdown/SKILL.md`
-4. `skills/database-design/SKILL.md` — Design schema before writing code
+4. `skills/database-design/SKILL.md` - Design schema before writing code
 
 ### Build
-5. `skills/incremental-implementation/SKILL.md` — Vertical slices
-6. `skills/api-and-interface-design/SKILL.md` — API contract first
+5. `skills/incremental-implementation/SKILL.md` - Vertical slices
+6. `skills/api-and-interface-design/SKILL.md` - API contract first
 7. `skills/backend-engineering/SKILL.md`
 8. `skills/frontend-engineering/SKILL.md`
 9. `skills/test-driven-development/SKILL.md`
@@ -30,9 +30,9 @@ Load this pack when implementing a feature end-to-end: database → API → UI.
 15. `skills/observability-and-monitoring/SKILL.md`
 
 ## Personas for full-stack reviews
-- `agents/code-reviewer.md` — Overall code review
-- `agents/security-auditor.md` — For auth, payments, or PII
-- `agents/performance-engineer.md` — For critical paths
+- `agents/code-reviewer.md` - Overall code review
+- `agents/security-auditor.md` - For auth, payments, or PII
+- `agents/performance-engineer.md` - For critical paths
 
 ## Full-stack checklist
 - [ ] Database migration backward compatible

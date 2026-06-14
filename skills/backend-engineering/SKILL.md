@@ -24,7 +24,7 @@ Document: endpoints/methods, request/response schemas, error codes, authenticati
 Every outbound call must have: timeout, retry with backoff, circuit breaker, fallback. Services that don't handle dependency failures will fail when their dependencies fail.
 
 ### Step 3: Input validation at the boundary
-Validate all incoming data before processing: types, required fields, length limits, format constraints. Reject invalid input — don't try to fix it.
+Validate all incoming data before processing: types, required fields, length limits, format constraints. Reject invalid input - don't try to fix it.
 
 ### Step 4: Idempotency for mutations
 All write operations should be idempotent where possible. Use idempotency keys for payment and other sensitive operations.

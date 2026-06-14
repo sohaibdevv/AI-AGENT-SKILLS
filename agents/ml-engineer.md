@@ -1,6 +1,6 @@
 ---
 name: ml-engineer
-role: ML Engineer — Model Training, Evaluation, and Deployment
+role: ML Engineer - Model Training, Evaluation, and Deployment
 ---
 
 ## Role

@@ -41,7 +41,7 @@ But left to their own judgment, they also:
 
 **The result is fast code that fails slowly.**
 
-AI Agent Skills solves this by giving agents the same disciplined workflows senior engineers use — with explicit steps, anti-shortcut enforcement, and evidence-based verification gates that cannot be bypassed.
+AI Agent Skills solves this by giving agents the same disciplined workflows senior engineers use - with explicit steps, anti-shortcut enforcement, and evidence-based verification gates that cannot be bypassed.
 
 ---
 
@@ -51,7 +51,7 @@ AI Agent Skills solves this by giving agents the same disciplined workflows seni
 
 </div>
 
-**AI Agent Skills** is a framework of 40+ structured workflow files — called skills — that AI coding agents load before doing work.
+**AI Agent Skills** is a framework of 40+ structured workflow files - called skills - that AI coding agents load before doing work.
 
 Each skill encodes how a senior engineer approaches a specific task: not just what to do, but **in what order**, **what to verify at each step**, **what shortcuts to refuse**, and **what evidence to produce** before calling the work done.
 
@@ -60,7 +60,7 @@ Without skills:   Agent writes code → maybe tests → ships
 With skills:      Agent reads spec → writes tests → implements → verifies → ships with rollback plan
 ```
 
-The framework covers every phase of software development — and uniquely extends into **AI/ML engineering**, **data pipelines**, **agent orchestration**, **mobile development**, and **incident response** — domains that no other skill framework addresses.
+The framework covers every phase of software development - and uniquely extends into **AI/ML engineering**, **data pipelines**, **agent orchestration**, **mobile development**, and **incident response** - domains that no other skill framework addresses.
 
 ---
 
@@ -183,7 +183,7 @@ AI-AGENT-SKILLS/
 </div>
 
 <details>
-<summary><h3>🎯 Define Phase — 3 Skills</h3></summary>
+<summary><h3>🎯 Define Phase - 3 Skills</h3></summary>
 
 <br/>
 
@@ -193,7 +193,7 @@ Sharpens a vague idea into a buildable, scoped proposal before writing a spec or
 **Key steps:** State the problem (not the solution) → Identify who has the problem → Measure the pain → List 3 candidate solutions → Score and select → Define out-of-scope → Define the success metric
 
 **Anti-rationalization it prevents:**
-> *"We know what we want to build — let's just build it"*
+> *"We know what we want to build - let's just build it"*
 
 ---
 
@@ -203,7 +203,7 @@ Forces a written specification before any implementation code. A spec reveals am
 **Key steps:** Capture raw requirement → Stakeholders and success criteria → Functional requirements → Non-functional requirements → Data model → Interface contract → Open questions → Get sign-off
 
 **Anti-rationalization it prevents:**
-> *"This feature is obvious — I don't need to write it down"*
+> *"This feature is obvious - I don't need to write it down"*
 
 ---
 
@@ -218,7 +218,7 @@ Converts stakeholder requests into verified, unambiguous, testable requirements.
 </details>
 
 <details>
-<summary><h3>📋 Plan Phase — 3 Skills</h3></summary>
+<summary><h3>📋 Plan Phase - 3 Skills</h3></summary>
 
 <br/>
 
@@ -233,7 +233,7 @@ Decomposes work into atomic, independently verifiable tasks. Prevents the "every
 ---
 
 ### [architecture-design](skills/architecture-design/SKILL.md)
-Makes decisions that are hard to reverse — explicit, documented, and traceable to requirements. Every decision has an ADR.
+Makes decisions that are hard to reverse - explicit, documented, and traceable to requirements. Every decision has an ADR.
 
 **Key steps:** Establish constraints → Rank quality attributes → Define component boundaries → Map data flow → Choose sync vs async → Design for failure → Write ADRs → Map to requirements
 
@@ -250,7 +250,7 @@ Makes technical and delivery risk explicit before it becomes an incident. Includ
 </details>
 
 <details>
-<summary><h3>🔨 Build Phase — 16 Skills</h3></summary>
+<summary><h3>🔨 Build Phase - 16 Skills</h3></summary>
 
 <br/>
 
@@ -260,7 +260,7 @@ Ships working vertical slices instead of big-bang implementations. Every commit 
 ---
 
 ### [test-driven-development](skills/test-driven-development/SKILL.md)
-Write tests before code. TDD is not about testing — it's about design. The test suite is proof of correctness, not evidence of effort.
+Write tests before code. TDD is not about testing - it's about design. The test suite is proof of correctness, not evidence of effort.
 
 ---
 
@@ -300,7 +300,7 @@ Data pipelines fail silently. This skill adds quality gates, data contracts, lin
 **What makes it unique:** Contract validation at ingestion · Quality gates before writes · Dead letter queue for bad data · Lineage for GDPR compliance · Late-arriving data strategy
 
 **Anti-rationalization it prevents:**
-> *"The source is reliable — we don't need contract validation"*
+> *"The source is reliable - we don't need contract validation"*
 
 ---
 
@@ -313,7 +313,7 @@ Mobile-specific constraints: offline-first design, main thread discipline, batte
 All infrastructure is version-controlled code with the same discipline as application code: plan review, blast radius analysis, staged apply, drift detection.
 
 **Anti-rationalization it prevents:**
-> *"It's a small change — I'll do it in the console"*
+> *"It's a small change - I'll do it in the console"*
 
 ---
 
@@ -326,7 +326,7 @@ Justifies the split before making it. Service boundaries by business capability.
 Prompts are code. Version them. Test them. Validate their output format. Run regression tests in CI. Test for prompt injection.
 
 **Anti-rationalization it prevents:**
-> *"Prompt engineering is just natural language — I don't need to test it"*
+> *"Prompt engineering is just natural language - I don't need to test it"*
 
 ---
 
@@ -356,7 +356,7 @@ Every non-obvious implementation decision must be traceable to an authoritative 
 </details>
 
 <details>
-<summary><h3>🔍 Verify Phase — 7 Skills</h3></summary>
+<summary><h3>🔍 Verify Phase - 7 Skills</h3></summary>
 
 <br/>
 
@@ -370,7 +370,7 @@ Blocking criteria: security vulnerabilities, correctness failures in the happy p
 ### [security-and-hardening](skills/security-and-hardening/SKILL.md)
 STRIDE threat modeling · Input validation · Auth/authz · Secrets management · Dependency audit · Data protection · Security headers.
 
-**Key rule:** No secrets in code, commits, or logs. Verify with `git log --all -p | grep -i "secret\|password\|token\|key"` — if anything shows, rotate immediately.
+**Key rule:** No secrets in code, commits, or logs. Verify with `git log --all -p | grep -i "secret\|password\|token\|key"` - if anything shows, rotate immediately.
 
 ---
 
@@ -378,7 +378,7 @@ STRIDE threat modeling · Input validation · Auth/authz · Secrets management �
 Profile before optimizing. Optimize the bottleneck. Measure the improvement. Verify correctness. Document why the code looks unusual.
 
 **Anti-rationalization it prevents:**
-> *"I know this is slow — I don't need to profile"*
+> *"I know this is slow - I don't need to profile"*
 
 ---
 
@@ -410,7 +410,7 @@ Systematically evaluate LLM outputs across correctness, relevance, groundedness,
 </details>
 
 <details>
-<summary><h3>🚀 Ship Phase — 5 Skills</h3></summary>
+<summary><h3>🚀 Ship Phase - 5 Skills</h3></summary>
 
 <br/>
 
@@ -428,7 +428,7 @@ Pipeline stages with time budgets · Required gates (tests, security, linting) �
 Write the rollback procedure before deploying. Staged rollout (1% → 10% → 50% → 100%). Bake time at each stage. Backward-compatible database migrations. Automated success criteria.
 
 **Anti-rationalization it prevents:**
-> *"It's a small change — we can deploy to 100%"*
+> *"It's a small change - we can deploy to 100%"*
 
 ---
 
@@ -445,7 +445,7 @@ Documentation that stays accurate: audience-first, why not what, close to the co
 </details>
 
 <details>
-<summary><h3>⚙️ Meta Skills — 3 Skills</h3></summary>
+<summary><h3>⚙️ Meta Skills - 3 Skills</h3></summary>
 
 <br/>
 
@@ -479,7 +479,7 @@ Specialist agents for focused review work. Load one to get dedicated expertise o
 
 <br/>
 
-### [Code Reviewer](agents/code-reviewer.md) — Staff Engineer
+### [Code Reviewer](agents/code-reviewer.md) - Staff Engineer
 Reviews PRs across five dimensions: Correctness, Security, Performance, Readability, Architecture. Produces severity-ranked findings (Blocking / Major / Minor / Nit) with specific, actionable suggestions.
 
 ```
@@ -488,7 +488,7 @@ Load agents/code-reviewer.md and review the changes in src/auth/
 
 ---
 
-### [Security Auditor](agents/security-auditor.md) — Security Engineer
+### [Security Auditor](agents/security-auditor.md) - Security Engineer
 STRIDE threat modeling, OWASP top 10, supply chain risk. Produces findings with attack scenarios and remediation steps. Critical findings block the PR.
 
 ```
@@ -497,7 +497,7 @@ Load agents/security-auditor.md and audit the payment processing changes
 
 ---
 
-### [Test Engineer](agents/test-engineer.md) — QA Specialist
+### [Test Engineer](agents/test-engineer.md) - QA Specialist
 Reviews test coverage quality across strategy, completeness, design, and maintainability. Flags missing tests, brittle tests, and tests that give false confidence.
 
 ```
@@ -506,7 +506,7 @@ Load agents/test-engineer.md and review test coverage for src/payments/
 
 ---
 
-### [Performance Engineer](agents/performance-engineer.md) — Performance Specialist
+### [Performance Engineer](agents/performance-engineer.md) - Performance Specialist
 Profile-first analysis across latency, throughput, memory, database, and frontend. Produces quantified findings: current numbers, root cause, expected improvement.
 
 ```
@@ -515,7 +515,7 @@ Load agents/performance-engineer.md and profile the /api/search endpoint
 
 ---
 
-### ⭐ [ML Engineer](agents/ml-engineer.md) — Machine Learning Specialist
+### ⭐ [ML Engineer](agents/ml-engineer.md) - Machine Learning Specialist
 Reviews ML systems across data quality, modeling rigor, evaluation harness, safety/fairness, and production readiness. Flags silent failure modes before they reach users.
 
 ```
@@ -524,7 +524,7 @@ Load agents/ml-engineer.md and review the recommendation model training pipeline
 
 ---
 
-### ⭐ [Data Engineer](agents/data-engineer.md) — Data Infrastructure Specialist
+### ⭐ [Data Engineer](agents/data-engineer.md) - Data Infrastructure Specialist
 Reviews pipelines across data contracts, reliability, quality, lineage, and performance. Evaluates downstream impact of every finding.
 
 ```
@@ -533,7 +533,7 @@ Load agents/data-engineer.md and review the user events ingestion pipeline
 
 ---
 
-### ⭐ [DevOps Engineer](agents/devops-engineer.md) — Infrastructure & Reliability Specialist
+### ⭐ [DevOps Engineer](agents/devops-engineer.md) - Infrastructure & Reliability Specialist
 Reviews infrastructure changes across IaC quality, CI/CD design, reliability patterns, security controls, and observability completeness.
 
 ```
@@ -542,7 +542,7 @@ Load agents/devops-engineer.md and review the Kubernetes deployment configuratio
 
 ---
 
-### ⭐ [Tech Writer](agents/tech-writer.md) — Documentation Specialist
+### ⭐ [Tech Writer](agents/tech-writer.md) - Documentation Specialist
 Reviews documentation for audience clarity, structure, accuracy, and maintainability. Catches docs that are wrong, missing, or that nobody will actually read.
 
 ```
@@ -589,7 +589,7 @@ For ETL/ELT pipelines, data warehouses, and data-driven systems.
 ### 🌐 [Full-Stack Pack](packs/fullstack-pack.md)
 For end-to-end feature development across database, API, and UI.
 
-**Includes:** All 8 phases in order — from idea-refine through deployment-strategy
+**Includes:** All 8 phases in order - from idea-refine through deployment-strategy
 
 ---
 
@@ -612,7 +612,7 @@ Move fast without breaking production. The minimum viable engineering discipline
 ### 🏢 [Enterprise Pack](packs/enterprise-pack.md)
 For teams with compliance requirements, audit trails, and formal change management.
 
-**Includes:** All skills with formal gates — requirements traceability, ADRs for all decisions, two-approval PRs, change records for deployments, blameless post-mortems for incidents.
+**Includes:** All skills with formal gates - requirements traceability, ADRs for all decisions, two-approval PRs, change records for deployments, blameless post-mortems for incidents.
 
 </details>
 
@@ -645,10 +645,10 @@ Copy these into your PR templates or review workflows.
 ### Three commitments every skill makes
 
 **1. Process over prose**
-Skills are executable workflows with checkpoints — not reference material you read once and forget. Every skill tells you exactly what to do at each step.
+Skills are executable workflows with checkpoints - not reference material you read once and forget. Every skill tells you exactly what to do at each step.
 
 **2. Anti-rationalization built in**
-Every skill documents the exact excuses agents (and humans) use to skip steps — and rebuts them directly. For example:
+Every skill documents the exact excuses agents (and humans) use to skip steps - and rebuts them directly. For example:
 
 > **"This is too small to need a spec"**
 > If it's obvious, the spec takes 10 minutes. If it's not obvious, the spec saves days. Either way: write it.
@@ -660,7 +660,7 @@ Every skill documents the exact excuses agents (and humans) use to skip steps �
 > The agent has never seen your edge cases. Write tests for them.
 
 **3. Evidence over confidence**
-"I think it works" is not a verification. Every skill's Verification Requirements section specifies the **evidence** required — logs, test output, metrics, reviewer sign-off — before work can be marked complete. Subjective approval is not acceptable.
+"I think it works" is not a verification. Every skill's Verification Requirements section specifies the **evidence** required - logs, test output, metrics, reviewer sign-off - before work can be marked complete. Subjective approval is not acceptable.
 
 ---
 
@@ -668,13 +668,13 @@ Every skill documents the exact excuses agents (and humans) use to skip steps �
 
 The framework embeds hard-won engineering knowledge including:
 
-- **Hyrum's Law** — all observable behaviors of a system will be depended on by somebody; design and change carefully
-- **Chesterton's Fence** — understand why something exists before removing it
-- **Beyoncé Rule** — if you liked it, you should have put a test on it
-- **The Beyoncé Corollary** — if a test doesn't fail when the behavior breaks, it provides no value
-- **Walking Skeleton** — get end-to-end working first; flesh it out incrementally
-- **Vertical Slices** — ship thin, complete features rather than horizontal layers
-- **Blameless Post-Mortems** — systems fail, not people; fix the system
+- **Hyrum's Law** - all observable behaviors of a system will be depended on by somebody; design and change carefully
+- **Chesterton's Fence** - understand why something exists before removing it
+- **Beyoncé Rule** - if you liked it, you should have put a test on it
+- **The Beyoncé Corollary** - if a test doesn't fail when the behavior breaks, it provides no value
+- **Walking Skeleton** - get end-to-end working first; flesh it out incrementally
+- **Vertical Slices** - ship thin, complete features rather than horizontal layers
+- **Blameless Post-Mortems** - systems fail, not people; fix the system
 
 ---
 
@@ -707,20 +707,20 @@ Specific, observable trigger conditions.
 
 ## Anti-Rationalizations
 **"[Exact shortcut rationalization]"**
-[Direct rebuttal — why this reasoning is wrong]
+[Direct rebuttal - why this reasoning is wrong]
 
 ## Red Flags
 Signs this skill is being misapplied.
 
 ## Verification Requirements
 - [ ] Observable, measurable evidence of completion
-- [ ] Not: "code looks good" — yes: "all queries parameterized (grep confirms)"
+- [ ] Not: "code looks good" - yes: "all queries parameterized (grep confirms)"
 ```
 
 **Difficulty levels:**
-- `junior` — Any engineer can apply without domain expertise
-- `senior` — Requires understanding of engineering trade-offs
-- `staff` — Requires system-level thinking and knowledge of failure modes at scale
+- `junior` - Any engineer can apply without domain expertise
+- `senior` - Requires understanding of engineering trade-offs
+- `staff` - Requires system-level thinking and knowledge of failure modes at scale
 
 ---
 
@@ -804,11 +804,11 @@ These rules apply in every session, regardless of which skill is loaded:
 
 Skills must be:
 
-- **Specific** — Actionable steps an agent can execute, not vague principles
-- **Verifiable** — Clear exit criteria with measurable evidence
-- **Grounded** — Based on real production engineering practice
-- **Minimal** — No duplication; reference other skills instead
-- **Anti-shortcut** — Include documented rebuttals to common rationalizations
+- **Specific** - Actionable steps an agent can execute, not vague principles
+- **Verifiable** - Clear exit criteria with measurable evidence
+- **Grounded** - Based on real production engineering practice
+- **Minimal** - No duplication; reference other skills instead
+- **Anti-shortcut** - Include documented rebuttals to common rationalizations
 
 **How to contribute:**
 
@@ -817,7 +817,7 @@ Skills must be:
 3. Run `bash hooks/session-start-test.sh` (must pass)
 4. Open a PR with title: `feat(skill): add <skill-name>`
 
-Looking for contribution ideas? Check the [open issues](https://github.com/sohaibdevv/AI-AGENT-SKILLS/issues) — issues labeled `good first issue` are the best starting point.
+Looking for contribution ideas? Check the [open issues](https://github.com/sohaibdevv/AI-AGENT-SKILLS/issues) - issues labeled `good first issue` are the best starting point.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guidelines.
 
@@ -848,7 +848,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guidelines.
 
 <div align="center">
 
-If AI Agent Skills helped you ship better software, **give it a star** — it helps the project reach more engineers who need it.
+If AI Agent Skills helped you ship better software, **give it a star** - it helps the project reach more engineers who need it.
 
 [![Star this repo](https://img.shields.io/badge/⭐_Star_This_Repo-7c3aed?style=for-the-badge&logo=starship&logoColor=white)](https://github.com/sohaibdevv/AI-AGENT-SKILLS)
 

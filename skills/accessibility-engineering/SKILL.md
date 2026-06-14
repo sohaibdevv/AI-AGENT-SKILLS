@@ -7,7 +7,7 @@ domains: [web, mobile]
 
 ## Overview
 
-Accessibility is not a checklist — it is a commitment to not excluding users. 1 in 4 adults has some form of disability. Inaccessible software is defective software. This skill bakes accessibility in during development, not as a retrofit.
+Accessibility is not a checklist - it is a commitment to not excluding users. 1 in 4 adults has some form of disability. Inaccessible software is defective software. This skill bakes accessibility in during development, not as a retrofit.
 
 ## When to Use
 

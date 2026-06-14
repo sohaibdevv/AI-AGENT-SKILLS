@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-Code review is the most important quality gate in software development. A good code review catches bugs, prevents security vulnerabilities, improves design, and transfers knowledge — before code reaches production. This skill runs a structured review across five dimensions.
+Code review is the most important quality gate in software development. A good code review catches bugs, prevents security vulnerabilities, improves design, and transfers knowledge - before code reaches production. This skill runs a structured review across five dimensions.
 
 ## When to Use
 
@@ -67,17 +67,17 @@ Code review is the most important quality gate in software development. A good c
 
 1. Read the PR description. If it's missing, ask for it.
 2. Understand the spec/ticket the PR is implementing.
-3. Review the tests first — they tell you what the author thinks the code should do.
+3. Review the tests first - they tell you what the author thinks the code should do.
 4. Review the implementation against each dimension above.
 5. Run the code locally for non-trivial PRs.
-6. Leave specific, actionable comments. Not "this is wrong" — "this will fail when X because Y; consider Z."
+6. Leave specific, actionable comments. Not "this is wrong" - "this will fail when X because Y; consider Z."
 
 ## Anti-Rationalizations
 
-**"The tests pass — it's good to go"**
+**"The tests pass - it's good to go"**
 Tests passing proves the code passes the tests. It does not prove the tests are correct, complete, or that the code is secure.
 
-**"It's a small change — it doesn't need a full review"**
+**"It's a small change - it doesn't need a full review"**
 Small changes have caused large incidents. The review checklist is short enough to run on any change.
 
 ## Verification Requirements

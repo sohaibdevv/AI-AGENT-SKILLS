@@ -7,7 +7,7 @@ domains: [web]
 
 ## Overview
 
-Frontend engineering is full-stack engineering from the network edge to the pixel. Performance, accessibility, maintainability, and security are all first-class concerns — not features to add later.
+Frontend engineering is full-stack engineering from the network edge to the pixel. Performance, accessibility, maintainability, and security are all first-class concerns - not features to add later.
 
 ## When to Use
 

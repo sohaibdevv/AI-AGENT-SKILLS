@@ -63,7 +63,7 @@ After a deployment: watch the golden signals for 24 hours. Document any anomalie
 
 ## Anti-Rationalizations
 
-**"It's a small change — we can deploy to 100%"**
+**"It's a small change - we can deploy to 100%"**
 "Small" changes cause production incidents. All production changes go through staged rollout.
 
 **"We can roll back if there's a problem"**

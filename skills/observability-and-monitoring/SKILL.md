@@ -7,7 +7,7 @@ domains: [general]
 
 ## Overview
 
-A system you cannot observe is a system you cannot debug. Observability is not a dashboard — it is the ability to answer any question about system behavior using existing data, without deploying new code. This skill implements the three pillars (logs, metrics, traces) and the alerts that page you before users notice.
+A system you cannot observe is a system you cannot debug. Observability is not a dashboard - it is the ability to answer any question about system behavior using existing data, without deploying new code. This skill implements the three pillars (logs, metrics, traces) and the alerts that page you before users notice.
 
 ## When to Use
 
@@ -19,8 +19,8 @@ A system you cannot observe is a system you cannot debug. Observability is not a
 ## Process
 
 ### Step 1: Define the SLIs and SLOs
-**SLI** (Service Level Indicator): what you measure — latency, error rate, availability, throughput.
-**SLO** (Service Level Objective): the target — "p99 latency < 500ms," "error rate < 0.1%."
+**SLI** (Service Level Indicator): what you measure - latency, error rate, availability, throughput.
+**SLO** (Service Level Objective): the target - "p99 latency < 500ms," "error rate < 0.1%."
 
 Without SLOs, you don't know when to alert.
 
@@ -34,10 +34,10 @@ Without SLOs, you don't know when to alert.
 
 ### Step 3: Key metrics
 Implement the four golden signals for every service:
-- **Latency** — p50, p95, p99 response time
-- **Traffic** — requests per second, events per second
-- **Errors** — error rate (4xx, 5xx), error count
-- **Saturation** — CPU, memory, queue depth, connection pool
+- **Latency** - p50, p95, p99 response time
+- **Traffic** - requests per second, events per second
+- **Errors** - error rate (4xx, 5xx), error count
+- **Saturation** - CPU, memory, queue depth, connection pool
 
 Add business metrics: active users, signups, payments, key conversions.
 
@@ -48,8 +48,8 @@ Add business metrics: active users, signups, payments, key conversions.
 - Sample at 100% for errors; sample at 1–10% for success paths
 
 ### Step 5: Health checks and readiness probes
-- `/healthz` — is the service alive?
-- `/readyz` — is the service ready to accept traffic?
+- `/healthz` - is the service alive?
+- `/readyz` - is the service ready to accept traffic?
 - Health checks must not perform significant work (no database writes)
 - Check downstream dependencies in readiness probe
 
@@ -82,7 +82,7 @@ For each alert: what does it mean, what is the likely cause, what are the first 
 **"We'll add monitoring after we know what's important to monitor"**
 By the time you know what's important to monitor, you've already had the incident that taught you.
 
-**"Logs are enough — we don't need metrics"**
+**"Logs are enough - we don't need metrics"**
 Logs tell you what happened. Metrics tell you what is happening right now at scale.
 
 ## Verification Requirements
